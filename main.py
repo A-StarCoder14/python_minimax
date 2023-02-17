@@ -202,6 +202,7 @@ try:
         exit(1)
 except ValueError:
     print("Please enter a difficulty level for the game:\n\n\teasy | medium | hard")
+    exit(1)
 else:
     game = Tic_Tac_Toe(difficulty.upper())
     game.start()
