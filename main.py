@@ -162,13 +162,13 @@ class Tic_Tac_Toe:
                 self.playerMove()
             while True:
                 self.minimax_move()
-                self.printBoard()
                 if game.checkWinner() != 'tie' or game.checkFreeSpaces() == 0:
                     break
+                self.printBoard()
                 self.playerMove()
-                self.printBoard()
                 if game.checkWinner() != 'tie' or game.checkFreeSpaces() == 0:
                     break
+            self.printBoard()
             if self.checkWinner() == Tic_Tac_Toe.PLAYER:
                 print("You won")
             elif self.checkWinner() == Tic_Tac_Toe.AI:
@@ -179,13 +179,13 @@ class Tic_Tac_Toe:
         if self.difficulty == "EASY":
             while True:
                 self.ai_random_move()
-                self.printBoard()
                 if game.checkWinner() != 'tie' or game.checkFreeSpaces() == 0:
                     break
+                self.printBoard()
                 self.playerMove()
-                self.printBoard()
                 if game.checkWinner() != 'tie' or game.checkFreeSpaces() == 0:
                     break
+            self.printBoard()
             if self.checkWinner() == Tic_Tac_Toe.PLAYER:
                 print("You won")
             elif self.checkWinner() == Tic_Tac_Toe.AI:
